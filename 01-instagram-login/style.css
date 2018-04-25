@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(250, 250, 250);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.form-container {
+  width: 350px;
+  height: 275px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  margin: 100px 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-container h1 {
+  font-family: "Oleo Script", cursive;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 22px auto 12px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-container form input {
+  margin: 0 40px 6px;
+  padding: 0 9px;
+  height: 36px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid #efefef;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.form-container form input:focus {
+  outline: none;
+  border: 1px solid #828282;
+}
+
+.form-container form input[type="submit"] {
+  margin: 8px 40px;
+  background-color: #3897f0;
+  color: white;
+  height: 26px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-container form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.form-container form input[type="submit"]:active {
+  opacity: 0.4;
+}
+
+.form-container form input[type="submit"]:focus {
+  border: none;
+  opacity: 0.4;
+}
+
+.form-container form a {
+  color: #003569;
+  text-decoration: none;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.form-container form a:focus {
+  outline: none;
+}
+
+@media (max-width: 450px) {
+  .form-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    border: none;
+    justify-content: flex-start;
+  }
+}
