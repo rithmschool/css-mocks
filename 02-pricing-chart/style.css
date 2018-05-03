@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  background-color: #030d50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+body:hover {
+  cursor: default;
+}
+
+.chart-container {
+  width: 1080px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 5px rgb(200, 200, 200);
+}
+
+.chart-header {
+  border-radius: 4px 4px 0 0;
+  background-color: #fafdff;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 25px 0;
+  color: #6b7c93;
+  text-align: center;
+}
+
+.chart-body {
+  border-top: 1px solid #e6eaef;
+  display: flex;
+  height: 546px;
+}
+
+.tile {
+  border-right: 1px solid #e6eaef;
+  flex: 1;
+  box-sizing: border-box;
+  height: 100%;
+  color: #434e5a;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.tile:last-child {
+  border: none;
+}
+
+.tile h4 {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.tile-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+h1.price {
+  color: #3b99f0;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h1.price small {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.summary p {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 3px;
+}
+
+ul.features {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+button {
+  margin: auto auto 50px;
+  border-radius: 6px;
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 44px;
+  outline: none;
+  width: 190px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-default {
+  background-color: #3b99f0;
+  color: #fff;
+}
+
+.btn-default:hover {
+  opacity: 0.8;
+}
+
+.btn-outline {
+  border: 2px solid #e6eaef;
+  color: #3b99f0;
+  line-height: 40px;
+}
+
+.btn-outline:hover {
+  border-color: #3b99f0;
+}
+
+.hover-message {
+  opacity: 0;
+  margin-top: 50px;
+  color: #3b99f0;
+  font-weight: 700;
+}
+
+.tile:hover .summary,
+.tile:hover .features {
+  display: none;
+}
+
+.tile:hover .hover-message {
+  opacity: 1;
+  margin-top: 80px;
+  transition: all 0.5s;
+}
