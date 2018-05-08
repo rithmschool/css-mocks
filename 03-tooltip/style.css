@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom right, #e91e63, #ffe1fd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.quote {
+  width: 50%;
+  min-width: 500px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.quote > div {
+  font-size: 2em;
+}
+
+.definition {
+  background-color: #09b218;
+  display: inline-block;
+  padding: 0px 8px 5px 5px;
+  margin: -10px 0;
+  position: relative;
+}
+
+.definition:hover {
+  cursor: pointer;
+}
+
+.definition:hover .tooltip {
+  opacity: 1;
+  top: -180px;
+}
+
+.tooltip {
+  position: absolute;
+  opacity: 0;
+  background-color: #09b218;
+  padding: 0;
+  width: 300px;
+  top: -210px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+  left: 50%;
+  margin-left: -150px;
+  pointer-events: none;
+  transition: all 1s;
+  text-align: center;
+}
+
+.tooltip::after {
+  position: absolute;
+  content: " ";
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  border-top: 10px solid #09b218;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+.tooltip .header {
+  background-color: #2fff42;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.tooltip .body p:last-child {
+  font-size: 40px;
+  margin: 0 16px;
+}
