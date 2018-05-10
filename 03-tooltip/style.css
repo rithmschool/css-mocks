@@ -47,14 +47,18 @@ body {
   font-size: 16px;
   font-weight: 400;
   border-radius: 5px;
+
+  /* horizontal centering */
   left: 50%;
   margin-left: -150px;
-  pointer-events: none;
+
+  pointer-events: none; /* Prevents weird hover behavior when tooltip is hidden */
   transition: all 1s;
   text-align: center;
 }
 
 .tooltip::after {
+  /* triangle trick, https://stackoverflow.com/questions/12610409/tooltip-with-a-triangle */
   position: absolute;
   content: " ";
   left: 50%;
