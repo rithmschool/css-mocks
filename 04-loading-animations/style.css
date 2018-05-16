@@ -1,0 +1,133 @@
+/* General */
+
+body {
+  text-align: center;
+}
+
+/* First Animation */
+
+.animation-one {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.animation-one .circle {
+  border-radius: 50%;
+  background-color: #333;
+  position: absolute;
+  animation: circle-fade 2s infinite;
+}
+
+.animation-one .circle:last-child {
+  animation-delay: 1s;
+  background-color: #aaa;
+}
+
+@keyframes circle-fade {
+  0%,
+  100% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+  }
+}
+
+/* Second Animation */
+
+.animation-two {
+  width: 80%;
+  margin: 0 auto;
+  height: 6px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar {
+  animation: bar-stretch 3s infinite;
+  height: 6px;
+  position: absolute;
+  border-radius: 3px;
+}
+
+.bar:nth-child(1) {
+  background-color: #da4733;
+}
+
+.bar:nth-child(2) {
+  background-color: #3b78e7;
+  animation-delay: 1s;
+}
+
+.bar:nth-child(3) {
+  background-color: #fdba2c;
+  animation-delay: 2s;
+}
+
+@keyframes bar-stretch {
+  0% {
+    width: 0;
+    left: 50%;
+    z-index: 100;
+  }
+  65% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+/* Third Animation */
+
+.animation-three {
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.animation-three .circle {
+  width: 20px;
+  height: 20px;
+  background-color: palevioletred;
+  border-radius: 50%;
+  margin-right: 10px;
+  animation: circle-hop 1.5s infinite;
+  margin-top: 50px;
+}
+
+.animation-three .circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.animation-three .circle:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes circle-hop {
+  0%,
+  100% {
+    margin-top: 50px;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    margin-top: 0;
+    animation-timing-function: ease-in;
+  }
+}
