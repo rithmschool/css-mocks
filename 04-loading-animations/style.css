@@ -48,9 +48,7 @@ body {
   width: 80%;
   margin: 0 auto;
   height: 6px;
-  background-color: #fff;
   position: relative;
-  overflow: hidden;
 }
 
 .bar {
@@ -95,7 +93,6 @@ body {
 
 .animation-three {
   height: 100px;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
