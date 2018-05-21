@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.water {
+  background: linear-gradient(blue, darkblue);
+  height: 35%;
+  position: relative;
+  z-index: 100;
+}
+
+.sky {
+  height: 65%;
+}
